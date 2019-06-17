@@ -1,0 +1,15 @@
+#container {
+  /*min-height: 542px;*/
+}
+
+.col.column {
+  min-height: 500px;
+}
+
+.chat_area {
+  position: absolute;
+  bottom: 0px;
+  width: 95%;
+  height: 8%;
+}
+

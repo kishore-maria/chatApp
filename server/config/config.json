@@ -1,0 +1,16 @@
+{
+  "server": {
+    "port": 4005,
+    "context": ""
+  },
+  "mongo": {
+    "host": ["127.0.0.1:27017"],
+    "dbName": "chat",
+    "applicationDB": "local"
+  },
+  "apiUrl": "/api/",
+  "tmp": "/tmp/",
+  "hosting" : {
+    "url" : "http://127.0.0.1"
+  }
+}

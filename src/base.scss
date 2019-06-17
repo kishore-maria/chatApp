@@ -1,0 +1,150 @@
+$warn: #FEAB06;
+$danger: #dc3545;
+$primary: #278492;
+$secondary: #7A7A7A;
+$dark: #2B2B2B;
+$primary-light: #169096;
+$app-background: #F0F1F1;
+
+
+::ng-deep .mat-step-header .mat-step-icon-selected,
+.mat-step-header .mat-step-icon-state-done,
+.mat-step-header .mat-step-icon-state-edit {
+  background-color: $primary !important;
+}
+
+//input outline color
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+  color: $primary !important;
+  // opacity: 1!important;
+}
+
+//mat-input focused color
+::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+  color: $primary !important;
+}
+
+// mat-input error outline color
+::ng-deep .mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid .mat-form-field-outline-thick {
+  color: $primary !important;
+  opacity: 0.8 !important;
+}
+
+// mat-input carent color
+::ng-deep .mat-input-element {
+  caret-color: $primary !important;
+}
+
+// mat-input error carent color
+::ng-deep .mat-form-field-invalid .mat-input-element,
+.mat-warn .mat-input-element {
+  caret-color: $primary !important;
+}
+
+// mat-label normal state style
+::ng-deep .mat-form-field-label {
+  color: rgba(0, 0, 0, .6) !important;
+}
+
+mat-label focused style::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+  color: $primary !important;
+}
+
+// mat-label error style
+::ng-deep .mat-form-field.mat-form-field-invalid .mat-form-field-label {
+  color: $primary !important;
+}
+
+::ng-deep .mat-form-field-underline,
+::ng-deep .mat-form-field-ripple {
+  background-color: white !important;
+}
+
+::ng-deep .mat-checkbox-checked .mat-checkbox-background {
+  background-color: $primary !important;
+}
+
+::ng-deep .mat-checkbox-checked .mat-checkbox-background {
+  background-color: $primary !important;
+}
+
+
+::ng-deep .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
+  background-color: $primary !important;
+  /*replace with your color*/
+}
+
+::ng-deep .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+  background-color: #30c9e0;
+  /*replace with your color*/
+}
+
+/* CSS to change 'Primary' color */
+
+::ng-deep .mat-slide-toggle.mat-primary.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
+  background-color: $primary-light;
+}
+
+::ng-deep .mat-slide-toggle.mat-primary.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+  background-color: $secondary;
+}
+
+/* CSS to change 'Warn' color */
+
+::ng-deep .mat-slide-toggle.mat-warn.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
+  background-color: orange;
+}
+
+::ng-deep .mat-slide-toggle.mat-warn.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+  background-color: yellow;
+}
+
+::ng-deep .ng5-slider {
+  padding: 2px !important;
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+::ng-deep .ng5-slider .ng5-slider-selection {
+  background: $primary !important;
+}
+
+::ng-deep .ng5-slider .ng5-slider-pointer {
+  background: #FFFFFF !important;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25) !important;
+  width: 16px !important;
+  height: 16px !important;
+  top: -8px !important;
+}
+
+
+::ng-deep .ng5-slider .ng5-slider-pointer:after {
+  display: none;
+}
+
+::ng-deep .ng5-slider .ng5-slider-bubble {
+  top: 12px !important;
+  font-size: 10px !important;
+  color: $secondary !important;
+}
+
+::ng-deep .ng5-slider .ng5-slider-bar {
+  width: 100% !important;
+
+}
+
+::ng-deep .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+  border-color: #348392;
+}
+
+::ng-deep .mat-radio-button.mat-accent .mat-radio-inner-circle {
+  background-color: #348392;
+}
+
+
+
+::ng-deep .menu {
+  min-width: 300px;
+  min-height: 100px;
+  padding: 10px;
+}

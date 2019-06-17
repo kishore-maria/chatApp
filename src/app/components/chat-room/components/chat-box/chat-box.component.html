@@ -1,0 +1,16 @@
+<div class="message_container">
+  <div class="inbox_container" >
+    <label for="" *ngIf="messages.length <= 0">No conversation</label>
+    <div class="mar_10" *ngFor="let message of messages" >
+      <div [ngClass]="{'sent_message': message.type === 'OUT', 'received_message': message.type === 'IN'}">
+        <span>{{message.message}}
+        </span>
+        <label class="message_time">{{message.createdAt | date:"shortTime" | lowercase}}</label>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="messages.length > 0">
+    <input [disabled]='!currentChattingUserId' class="chat_area" type="text" [(ngModel)]="message" (keyup.enter)="sendMessage(message)" />
+    <i [ngClass]="{'not_allowed': !currentChattingUserId}" class="material-icons" (click)="sendMessage(message)">send</i>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<app-nav-bar></app-nav-bar>
+<div>
+  <div class="container" id="container">
+    <div class="row">
+      <div class="col-md-10 col-xl-8">
+        <app-chat-box *ngIf="allUsers.length > 0"></app-chat-box>
+      </div>
+      <div class="col-md-2 col-xl-4">
+        <div class="input-group">
+          <h3>Users list</h3>
+        </div>
+        <label for="" *ngIf="allUsers.length <= 0">No users</label>
+        <ul class="list-group" *ngFor="let user of allUsers">
+          <li class="list-group-item">
+            <a (click)="openChat(user._id)">{{user.name}}</a>
+            <i class="material-icons active_user" *ngIf="user.active">fiber_manual_record</i>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

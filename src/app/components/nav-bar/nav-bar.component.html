@@ -1,0 +1,19 @@
+<nav class="navbar navbar-dark navbar-expand-md" id="app-navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand"></a>
+    <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item" role="presentation">
+          <label class="nav-link active">{{user.name}}</label>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" (click)='logout()'>Logout</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
